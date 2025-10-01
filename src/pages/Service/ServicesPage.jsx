@@ -1,0 +1,429 @@
+import React from 'react';
+import './ServicesPage.css'
+
+/* Componet */
+import HeaderPage from '../../components/Header/HeaderPage';
+import Footer from '../../components/Footer/Footer';
+import ParticleBackground from "../../components/ParticlesBg/ParticleBackground";
+import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
+import Accordion from './Accordion'
+
+
+/* Multi idioma */
+import { FormattedMessage } from 'react-intl';
+
+const Services = () => {
+  return (
+    <div>
+
+      <HeaderPage />
+
+      <ParticleBackground />
+
+      <main className="service-page">
+     <section className="servicios" id="servicios">
+  <h2 className="heading">
+    <FormattedMessage id="services" defaultMessage="Services" />
+  </h2>
+  <div className="row">
+    <div className="columns" data-aos="fade-up" data-aos-delay="200">
+      <i className="fas fa-laptop-code"></i>
+      <h3>
+        <FormattedMessage id="frontend" defaultMessage="Front-End Development" />
+      </h3>
+      <p>
+        <FormattedMessage
+          id="frontend-info"
+          defaultMessage="Building responsive, user-friendly websites with modern frameworks like React, ensuring clean and scalable code."
+        />
+      </p>
+    </div>
+
+    <div className="columns" data-aos="fade-up" data-aos-delay="300">
+      <i className="fas fa-pencil-ruler"></i>
+      <h3>
+        <FormattedMessage id="design" defaultMessage="UI/UX Design Integration" />
+      </h3>
+      <p>
+        <FormattedMessage
+          id="design-info"
+          defaultMessage="Translating UI/UX design wireframes into functional, high-quality code to deliver seamless user experiences."
+        />
+      </p>
+    </div>
+
+    <div className="columns" data-aos="fade-up" data-aos-delay="400">
+      <i className="fas fa-mobile-alt"></i>
+      <h3>
+        <FormattedMessage id="responsive" defaultMessage="Responsive Design" />
+      </h3>
+      <p>
+        <FormattedMessage
+          id="responsive-info"
+          defaultMessage="Developing fully responsive websites optimized for all devices and screen sizes."
+        />
+      </p>
+    </div>
+
+    <div className="columns" data-aos="fade-up" data-aos-delay="500">
+      <i className="fas fa-wrench"></i>
+      <h3>
+        <FormattedMessage id="maintenance" defaultMessage="Web Maintenance" />
+      </h3>
+      <p>
+        <FormattedMessage
+          id="maintenance-info"
+          defaultMessage="Maintaining and updating websites to fix bugs, add new features, and ensure long-term performance."
+        />
+      </p>
+    </div>
+
+    <div className="columns" data-aos="fade-up" data-aos-delay="600">
+      <i className="fas fa-tachometer-alt"></i>
+      <h3>
+        <FormattedMessage id="optimization" defaultMessage="Website Optimization" />
+      </h3>
+      <p>
+        <FormattedMessage
+          id="optimization-info"
+          defaultMessage="Improving website performance by optimizing loading speed, images, and code for the best user experience."
+        />
+      </p>
+    </div>
+  </div>
+</section>
+
+
+        {/* <section className="site-services">
+          <h2 className="heading">
+            <FormattedMessage
+              id='services-price'
+              defaultMessage='Price'
+            />
+          </h2>
+          <div className="row">
+            <div className="columns" data-aos="fade-up" data-aos-delay="200">
+              <h3>
+                <FormattedMessage
+                  id='services-info-title-1'
+                  defaultMessage='Essential'
+                />
+              </h3>
+              <h4 className="sub-title">
+                <FormattedMessage
+                  id='services-info-sub-title-1'
+                  defaultMessage='Perfect for new businesses'
+                />
+              </h4>
+              <p className="numero"><span>$</span>150</p>
+              <ul className="ul-cards-services">
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span >
+                    <FormattedMessage
+                      id='services-info-1-p1'
+                      defaultMessage='1 responsive page'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p2'
+                      defaultMessage='+3 sections for page'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p3'
+                      defaultMessage='Contact Form'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p4'
+                      defaultMessage='Domain for 1 year'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p5'
+                      defaultMessage='Hosting for 1 year'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-1-p6'
+                      defaultMessage='Delivered in 5 business days'
+                    />
+                  </span>
+                </li>
+              </ul>
+             
+            </div>
+            <div className="columns recomendado" data-aos="fade-up" data-aos-delay="300">
+              <h3>
+                <FormattedMessage
+                  id='services-info-title-2'
+                  defaultMessage='Professional'
+                />
+              </h3>
+              <h4 className="sub-title">
+                <FormattedMessage
+                  id='services-info-sub-title-2'
+                  defaultMessage='Designed for medium businesses'
+                />
+              </h4>
+              <p className="numero"><span>$</span>400</p>
+              <ul className="ul-cards-services">
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-2-p1'
+                      defaultMessage='5 responsive page'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p2'
+                      defaultMessage='+3 sections for page'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p3'
+                      defaultMessage='Contact Form'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p4'
+                      defaultMessage='Domain for 1 year'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p5'
+                      defaultMessage='Hosting for 1 year'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p6'
+                      defaultMessage='animations'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p7'
+                      defaultMessage='Free maintenance for 6 months'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-2-p6'
+                      defaultMessage='Delivered in 7 business days'
+                    />
+                  </span>
+                </li>
+              </ul>
+              
+            
+            </div>
+            <div className="columns" data-aos="fade-up" data-aos-delay="400">
+              <h3>Premium</h3>
+              <h4 className="sub-title">
+                <FormattedMessage
+                  id='services-info-sub-title-3'
+                  defaultMessage='Great for large websites'
+                />
+              </h4>
+              <p className="numero"><span>$</span>700</p>
+              <ul className="ul-cards-services">
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-3-p1'
+                      defaultMessage='+10 responsive pages'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p2'
+                      defaultMessage='+3 sections for page'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p3'
+                      defaultMessage='Contact Form'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p4'
+                      defaultMessage='Domain for 1 year'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p5'
+                      defaultMessage='Hosting for 1 year'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-p6'
+                      defaultMessage='animations'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-3-p7'
+                      defaultMessage='Free maintenance for 1 year'
+                    />
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-check"></i>
+                  <span>
+                    <FormattedMessage
+                      id='services-info-3-p6'
+                      defaultMessage='Delivered in 14 business days'
+                    />
+                  </span>
+                </li>
+              </ul>
+              
+             
+            </div>
+          </div>
+        </section> */}
+
+        {/* <section className="preguntas">
+          <h2 className="heading">
+            <FormattedMessage
+              id='services-questions'
+              defaultMessage='Frequent questions'
+            />
+          </h2>
+          <div className="accordion-container">
+            <Accordion
+              title={<FormattedMessage
+                id='services-questions-1'
+                defaultMessage='What is a responsive web page?'
+              />}
+              content={<FormattedMessage
+                id='services-questions-p1'
+                defaultMessage='It is that page that is capable of adapting to any device where it is viewed, such as cell phones, tablets, laptops, without losing appearance or usability.'
+              />}
+              dataAos="fade-right"
+              dataAosDelay="300"
+            />
+
+            <Accordion
+              title={<FormattedMessage
+                id='services-questions-2'
+                defaultMessage='What is a Domain and a Hosting?'
+              />}
+              content={<FormattedMessage
+                id='services-questions-p2'
+                defaultMessage='Both are essential elements of a website. In short, the domain name is the address of the web page, while the hosting provides the space and resources necessary to launch the website.'
+              />}
+              dataAos="fade-left"
+              dataAosDelay="300"
+            />
+
+            <Accordion
+              title={<FormattedMessage
+                id='services-questions-3'
+                defaultMessage='Is monthly maintenance necessary?'
+              />}
+              content={<FormattedMessage
+                id='services-questions-p3'
+                defaultMessage='Regular maintenance of your website allows you to attract and retain customers with new information, new products and services, in addition to helping you maintain or improve your ranking in Google.'
+              />}
+              dataAos="fade-right"
+              dataAosDelay="300"
+            />
+
+            <Accordion
+              title={<FormattedMessage
+                id='services-questions-4'
+                defaultMessage='How to pay'
+              />}
+              content={<FormattedMessage
+                id='services-questions-p4'
+                defaultMessage='You can pay online by credit or debit cards and payments by transfers.'
+              />}
+              dataAos="fade-left"
+              dataAosDelay="300"
+            />
+
+          </div>
+        </section> */}
+      </main>
+
+
+      <ScrollToTop />
+
+      <Footer />
+
+    </div>
+  )
+}
+export default Services;
