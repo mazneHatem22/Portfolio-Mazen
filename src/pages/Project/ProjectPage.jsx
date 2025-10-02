@@ -51,61 +51,61 @@ const Project = () => {
             />
           </h1>
           <nav className="navbar nav-proj">
-            <NavLink to="/project" offset={-150} duration={500}>
+            {/* <NavLink to="/project" offset={-150} duration={500}>
               <FormattedMessage
                 id='site-web'
                 defaultMessage='websites'
               />
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/project/app" offset={-150} duration={500}>
-              Apps
+            
             </NavLink>
-            <NavLink to="/project/game" offset={-150} duration={500}>
+            {/* <NavLink to="/project/game" offset={-150} duration={500}>
               <FormattedMessage
                 id='games'
                 defaultMessage='games'
               />
-            </NavLink>
+            </NavLink> */}
           </nav>
         </section>
 
         <section className="projects__grid paginas-web">
-          <div className="projects__item">
-            <a onClick={() => cambiarEstadoModal17(!estadoModal17)}>
-              <img src={proyectsImg(`./proyecto-17.jpg`)} alt="" className="projects__img" />
+          <div className="projects__item" data-aos="fade-right">
+            <a href='https://econnect-africa.com/'>
+              <img src={proyectsImg(`./E-Connect.png`)} alt="" className="projects__img" />
             </a>
           </div>
-          <div className="projects__item">
-            <a onClick={() => cambiarEstadoModal14(!estadoModal14)}>
-              <img src={proyectsImg(`./proyecto-14.jpg`)} alt="" className="projects__img" />
+          <div className="projects__item" data-aos="fade-left">
+            <a href='https://stoturee.vercel.app/'>
+              <img src={proyectsImg(`./Stoture.png`)} alt="" className="projects__img" />
             </a>
           </div>
-          <div className="projects__item">
-            <a onClick={() => cambiarEstadoModal15(!estadoModal15)}>
-              <img src={proyectsImg(`./proyecto-15.jpg`)} alt="" className="projects__img" />
+           <div className="projects__item"data-aos="zoom-in">
+            <a href='https://maznehatem22.github.io/Corona/'>
+              <img src={proyectsImg(`./COVID-19.png`)} alt="" className="projects__img" />
             </a>
           </div>
-          <div className="projects__item">
-            <a onClick={() => cambiarEstadoModal16(!estadoModal16)}>
-              <img src={proyectsImg(`./proyecto-16.jpg`)} className="projects__img" />
+           <div className="projects__item"data-aos="zoom-in">
+            <a href='https://movies-app-five-psi.vercel.app/'>
+              <img src={proyectsImg(`./Movie-App.png`)} alt="" className="projects__img" />
             </a>
           </div>
-          <div className="projects__item">
-            <a onClick={() => cambiarEstadoModal13(!estadoModal13)}>
-              <img src={proyectsImg(`./proyecto-13.jpg`)} alt="" className="projects__img" />
+            <div className="projects__item"data-aos="zoom-in">
+            <a href='https://bio-medic.vercel.app/'>
+              <img src={proyectsImg(`./Bio-Medic.png`)} alt="" className="projects__img" />
             </a>
           </div>
-          <div className="projects__item">
-            <a onClick={() => cambiarEstadoModal12(!estadoModal12)}>
-              <img src={proyectsImg(`./proyecto-12.jpg`)} alt="" className="projects__img" />
+           <div className="projects__item"data-aos="zoom-in">
+            <a href='https://dashboard-mighty.vercel.app/'>
+              <img src={proyectsImg(`./Dashboard-Mighty.png`)} alt="" className="projects__img" />
             </a>
           </div>
-          <div className="projects__item">
-            <a onClick={() => cambiarEstadoModal11(!estadoModal11)}>
-              <img src={proyectsImg(`./proyecto-11.jpg`)} alt="" className="projects__img" />
+           <div className="projects__item"data-aos="zoom-in">
+            <a href='https://portal-sudan.azurewebsites.net/Econnect'>
+              <img src={proyectsImg(`./Dashboard-Econneect.png`)} className="projects__img" />
             </a>
           </div>
-          <div className="projects__item">
+          {/* <div className="projects__item">
             <a onClick={() => cambiarEstadoModal10(!estadoModal10)}>
               <img src={proyectsImg(`./proyecto-10.jpg`)} alt="" className="projects__img" />
             </a>
@@ -139,7 +139,7 @@ const Project = () => {
             <a onClick={() => cambiarEstadoModal3(!estadoModal3)}>
               <img src={proyectsImg(`./proyecto-3.jpg`)} alt="" className="projects__img" />
             </a>
-          </div>
+          </div> */}
         </section>
       </main>
 

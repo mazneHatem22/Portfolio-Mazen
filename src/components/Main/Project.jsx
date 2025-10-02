@@ -67,7 +67,7 @@ const Project = () => {
                                 <span> -</span> Bootstrap
                                 <span> -</span> Js
                             </p>
-                            <a href="https://coin-plus.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://movies-app-five-psi.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
                             <a href="https://github.com/mazneHatem22/Movies_app.git" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
                         </div>
                     </SwiperSlide>
@@ -106,7 +106,7 @@ const Project = () => {
                                 <span> -</span> Bootstrap
                                 <span> -</span> Js
                             </p>
-                            <a href="https://pi-dogs-main-ashy.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
+                            <a href="https://stoturee.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
                             <a href="https://github.com/Nahuel61920/PI-DOGS-MAIN" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
                         </div>
                     </SwiperSlide>
@@ -190,11 +190,11 @@ const Project = () => {
                     defaultMessage='More projects'
                 />
             </Link> */}
-            {/* <div className='portafolio-btn'>
+            <div className='portafolio-btn'>
                 <Link to="/project">
                     <ButtomGet/>
                 </Link>
-            </div> */}
+            </div>
         </section>
 
     )
